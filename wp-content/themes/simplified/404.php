@@ -1,0 +1,1 @@
+<h1 style='text-align:center; width: 100%'>Упс... Страница не найдена =(</h1>

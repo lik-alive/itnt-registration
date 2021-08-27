@@ -1,0 +1,140 @@
+<!--Name: Подтверждение участия в конференции-->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      <!--
+      	/*Fonts*/
+      	@font-face {
+      	font-family: tnr;
+      	src: url(../tnr.ttf);
+      	}
+      	* { font-family:tnr; line-height:115%; }
+
+      	/*Page margins*/
+      	* { margin: 0; padding:0; }
+      	@page { margin: 0cm; }
+      	body { width:210mm; height:297mm; position:relative; background:#fefefe }
+      	#margins, .margins {
+      	padding-left: 20mm;
+      	padding-right: 20mm;
+      	padding-top: 20mm;
+      	padding-bottom: 20mm;
+      	}
+      	table { border-spacing: 0 }
+
+      	/*Text align*/
+      	.justify { text-align:justify; }
+      	.left {text-align:left; }
+      	.center { text-align:center; }
+      	.right { text-align:right; }
+
+      	/*Text parameters*/
+      	.fs-13 { font-size:13pt; }
+      	.fs-14 { font-size:14pt; }
+      	.lh-100 { line-height:100%; }
+      	.lh-115 { line-height:115%; }
+      	.lh-150 { line-height:150%; }
+      	.ind-10 { text-indent:10mm; }
+
+      	/*Margins*/
+      	.mt-2 { margin-top:2mm; }
+      	.mt-4 { margin-top:4mm; }
+      	.mt-6 { margin-top:6mm; }
+      	.mt-8 { margin-top:8mm; }
+      	.mt-10 { margin-top:10mm; }
+      	.mt-12 { margin-top:12mm; }
+      	.mt-14 { margin-top:14mm; }
+      	.mt-16 { margin-top:16mm; }
+      	.mt-18 { margin-top:18mm; }
+      	.mt-20 { margin-top:20mm; }
+      	.mt-22 { margin-top:22mm; }
+      	.mt-24 { margin-top:24mm; }
+      	.mt-26 { margin-top:26mm; }
+      	.mt-28 { margin-top:28mm; }
+      	.mt-30 { margin-top:30mm; }
+      	.mt-32 { margin-top:32mm; }
+      	.mt-34 { margin-top:34mm; }
+      	.mt-36 { margin-top:36mm; }
+      	.mt-38 { margin-top:38mm; }
+      	.mt-40 { margin-top:40mm; }
+
+      	/*Test Layout*/
+      	.TestBody { border:1px solid red; display:flex; }
+      	.TestBody > #margins { display:flex; }
+      	.TestBody > #margins > div { border: 1px solid blue; width:100%; }
+      -->
+    </style>
+  </head>
+  <body class="TestBody">
+    <div id="margins">
+      <div>
+        <!-- Main canvas -->
+        <p class="fs-13 right mt-36" style="margin-right: 10mm">
+          По месту требования
+        </p>
+
+        <p class="fs-14 center mt-26">СПРАВКА</p>
+
+        <p class="fs-14 ind-10 justify mt-8 lh-150">
+          Настоящим подтверждаем, что следующая работа:
+        </p>
+
+        <p class="fs-14 justify mt-10 lh-150">%ID%: %AUTHORS% «%PAPER%»</p>
+
+        <p class="fs-14 justify mt-10 lh-150">
+          была представлена в рамках V&nbsp;Международной конференции и
+          молодёжной школы «Информационные технологии и нанотехнологии»
+          ИТНТ&#8211;2019, проходившей с 21 по 24 мая 2019 года (г. Самара), в
+          формате «%FORMAT%».
+        </p>
+      </div>
+    </div>
+
+    <!-- Objects at absolute position -->
+    <div style="position: absolute; width: 100%; top: 195mm; right: 0">
+      <div class="margins">
+        <table width="100%">
+          <tr>
+            <td width="80%">
+              <p class="fs-13 lh-150">
+                От лица Программного комитета ИТНТ-2019,
+              </p>
+
+              <p class="fs-13 lh-150">С уважением,</p>
+
+              <p class="fs-13 lh-150">заместитель председателя</p>
+
+              <p class="fs-13 lh-150">Программного комитета</p>
+
+              <p class="fs-13 lh-150">д.ф.-м.н., проф.</p>
+            </td>
+            <td style="vertical-align: bottom">
+              <p class="fs-13 right">Н.Л. Казанский</p>
+            </td>
+          </tr>
+        </table>
+
+        <p class="fs-13 right mt-6">
+          __________________________________________________________________________
+        </p>
+
+        <p class="fs-13 mt-2 right">Email: secretary@itnt-conf.org</p>
+
+        <p class="fs-13 right">Web site: itnt-conf.org</p>
+      </div>
+    </div>
+
+    <img
+      style="position: absolute; top: 20mm; left: 20mm; width: 170mm"
+      src="..\header_2020.png"
+      src="%HEADERPIC%"
+    />
+
+    <img
+      style="position: absolute; top: 231mm; right: 52mm; width: 50mm"
+      src="..\signk.png"
+      src="%SIGNPIC%"
+    />
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!--Name: Test PDF-->
+<html>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <style>
+        <!--
+        /*Fonts*/
+        
+        @font-face {
+            font-family: tnr;
+            src: url(../tnr.ttf);
+        }
+        
+        * {
+            font-family: tnr;
+            line-height: 115%;
+        }
+        /*Page margins*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            margin: 0cm;
+        }
+        
+        body {
+            width: 210mm;
+            height: 297mm;
+            position: relative;
+            background: #fefefe;
+        }
+        
+        #margins,
+        .margins {
+            padding-left: 20mm;
+            padding-right: 20mm;
+            padding-top: 20mm;
+            padding-bottom: 20mm;
+        }
+        
+        #content {
+            width: 170mm;
+            height: 253mm;
+        }
+        
+        table {
+            border-spacing: 0
+        }
+        /*Text align*/
+        
+        .justify {
+            text-align: justify;
+        }
+        
+        .left {
+            text-align: left;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        /*Text parameters*/
+        
+        .fs-13 {
+            font-size: 13pt;
+        }
+        
+        .fs-14 {
+            font-size: 14pt;
+        }
+        
+        .fs-16 {
+            font-size: 16pt;
+        }
+        
+        .lh-100 {
+            line-height: 133%;
+        }
+        
+        .lh-115 {
+            line-height: 153%;
+        }
+        
+        .lh-150 {
+            line-height: 200%;
+        }
+        
+        .lh-200 {
+            line-height: 266%;
+        }
+        
+        .ind-10 {
+            text-indent: 10mm;
+        }
+        /*Margins*/
+        
+        .mt-2 {
+            margin-top: 2mm;
+        }
+        
+        .mt-4 {
+            margin-top: 4mm;
+        }
+        
+        .mt-6 {
+            margin-top: 6mm;
+        }
+        
+        .mt-8 {
+            margin-top: 8mm;
+        }
+        
+        .mt-10 {
+            margin-top: 10mm;
+        }
+        
+        .mt-12 {
+            margin-top: 12mm;
+        }
+        
+        .mt-14 {
+            margin-top: 14mm;
+        }
+        
+        .mt-16 {
+            margin-top: 16mm;
+        }
+        
+        .mt-18 {
+            margin-top: 18mm;
+        }
+        
+        .mt-20 {
+            margin-top: 20mm;
+        }
+        
+        .mt-22 {
+            margin-top: 22mm;
+        }
+        
+        .mt-24 {
+            margin-top: 24mm;
+        }
+        
+        .mt-26 {
+            margin-top: 26mm;
+        }
+        
+        .mt-28 {
+            margin-top: 28mm;
+        }
+        
+        .mt-30 {
+            margin-top: 30mm;
+        }
+        
+        .mt-32 {
+            margin-top: 32mm;
+        }
+        
+        .mt-34 {
+            margin-top: 34mm;
+        }
+        
+        .mt-36 {
+            margin-top: 36mm;
+        }
+        
+        .mt-38 {
+            margin-top: 38mm;
+        }
+        
+        .mt-40 {
+            margin-top: 40mm;
+        }
+        /*Test Layout*/
+        
+        .TestBody {
+            border: 1px solid red;
+        }
+        
+        .TestBody #content {
+            border: 1px solid blue;
+            width: 168mm;
+        }
+        
+        .TestBody .lh-100 {
+            line-height: 100%;
+        }
+        
+        .TestBody .lh-115 {
+            line-height: 115%;
+        }
+        
+        .TestBody .lh-150 {
+            line-height: 150%;
+        }
+        
+        .TestBody .lh-200 {
+            line-height: 200%;
+        }
+        
+        -->
+    </style>
+</head>
+
+<body class='TestBody' style=''>
+    <div id="content">
+        <p class='fs-14 lh-150'>1. СПРАВКА</p>
+        <p class='fs-14 lh-150'>2. СПРАВКА</p>
+        <p class='fs-14 lh-150'>3. СПРАВКА</p>
+        <p class='fs-14 lh-150'>1АБВГД Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я А Б В Г Д Е Ё</p>
+        <p class='fs-14 lh-150'>5. СПРАВКА</p>
+        <p class='fs-14 lh-150'>6. СПРАВКА</p>
+        <p class='fs-14 lh-150'>7. СПРАВКА</p>
+        <p class='fs-14 lh-150'>8. СПРАВКА</p>
+        <p class='fs-14 lh-150'>9. СПРАВКА</p>
+        <p class='fs-14 lh-150'>10. СПРАВКА</p>
+        <p class='fs-14 lh-150'>11. СПРАВКА</p>
+        <p class='fs-14 lh-150'>12. СПРАВКА</p>
+        <p class='fs-14 lh-150'>13. СПРАВКА</p>
+        <p class='fs-14 lh-150'>14. СПРАВКА</p>
+        <p class='fs-14 lh-150'>15. СПРАВКА</p>
+        <p class='fs-14 lh-150'>16. СПРАВКА</p>
+    </div>
+
+    <img style='position:absolute; top:37mm; left:0mm; width:50mm; height: 20mm' src='..\signk.png' src='%SIGNPIC%' />
+</body>
+<script>
+    var el = document.getElementById('margins');
+    var pt = window.getComputedStyle(el, null).getPropertyValue('padding-top');
+    var pb = window.getComputedStyle(el, null).getPropertyValue('padding-bottom');
+</script>
+
+</html>

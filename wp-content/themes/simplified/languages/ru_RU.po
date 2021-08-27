@@ -1,0 +1,289 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: itnt-registration\n"
+"POT-Creation-Date: 2019-02-21 18:39+0400\n"
+"PO-Revision-Date: 2019-05-20 15:01+0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Last-Translator: \n"
+"Language: ru_RU\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Please, fill in English"
+msgstr "На английском"
+
+msgid "Invalid e-mail format"
+msgstr "Неверный формат e-mail адреса"
+
+msgid "Maximum two papers could be presented by one author"
+msgstr "Один автор может представить не более 2 докладов"
+
+msgid "The paper has already been selected"
+msgstr "Данный доклад уже выбран"
+
+msgid "Personal Information"
+msgstr "Персональная информация"
+
+msgid "First Name"
+msgstr "Имя"
+
+msgid "Family Name"
+msgstr "Фамилия"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Scientific degree"
+msgstr "Учёная степень"
+
+msgid "DSc / PhD"
+msgstr "Доктор / Кандидат"
+
+msgid "Student / PhD Student"
+msgstr "Студент / Аспирант"
+
+msgid "None"
+msgstr "Отсутствует"
+
+msgid "Residency"
+msgstr "Гражданство"
+
+msgid "Russian Federation"
+msgstr "Российская Федерация"
+
+msgid "CIS"
+msgstr "Страны СНГ"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "Select country"
+msgstr "Выберите страну"
+
+msgid "Main organization"
+msgstr "Основная организация"
+
+msgid "Samara University"
+msgstr "Самарский университет"
+
+msgid "Short name (no abbreviation)"
+msgstr "Краткое название (без аббревиатур)"
+
+msgid "City"
+msgstr "Город"
+
+msgid "Payment from organization"
+msgstr "Оплата от организации"
+
+msgid "Format of participation"
+msgstr "Формат участия"
+
+msgid "Listener"
+msgstr "Слушатель"
+
+msgid "Presenter"
+msgstr "Докладчик"
+
+msgid "Select 1 or 2 papers (search by Author or Title)..."
+msgstr "Выберите 1 или 2 доклада (поиск по автору или названию)..."
+
+msgid "I'll participate in Youth School"
+msgstr "Участвую в Школе молодых учёных"
+
+msgid "Entertainment interests"
+msgstr "Хотели бы посетить"
+
+msgid "Welcome party"
+msgstr "Торжественный ужин"
+
+msgid "Boat trip"
+msgstr "Путешествие на корабле"
+
+msgid "Cosmic Samara tour"
+msgstr "Музей Самара-космическая"
+
+msgid "Stalin's Bunker tour"
+msgstr "Экскурсия в Бункер&nbsp;Сталина"
+
+msgid "Samara Sightseeing"
+msgstr "Обзорная экскурсия"
+
+msgid "Samara University Scientific Labs tour"
+msgstr "Экскурсия по лабораториям Самарского университета"
+
+msgid "Submit"
+msgstr "Принять"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Forgot your registration edit link?"
+msgstr "Забыли свою ссылку на редактирование?"
+
+msgid "Information for recovery"
+msgstr "Информация для восстановления"
+
+msgid "Field is required"
+msgstr "Заполните поле"
+
+msgid "This E-mail has already been registered. If you want to edit registration data, please, use your registration edit link"
+msgstr "Этот E-mail уже зарегистрирован. Если Вы хотите изменить регистрационные данные, пожалуйста, зайдите по ссылке для редактирования"
+
+msgid "The paper #%ECID% has already been selected by another participant (%EMAIL%). Please, contact Editorial Board or the participant."
+msgstr "Доклад #%ECID% уже зарегистрирован другим участником (%EMAIL%). Пожалуйста, свяжитесь с Оргкомитетом Конференции или же обратитесь к самому участнику."
+
+msgid "Registration failed. Please, contact the Editorial Board"
+msgstr "Ошибка регистрации. Свяжитесь, пожалуйста, с Оргкомитетом Конференции"
+
+msgid "Registration with the specified E-mail does not exists"
+msgstr "На данный E-mail регистраций не обнаружено"
+
+msgid "Link restoration failed. Please, contact Editorial Board"
+msgstr "Ошибка всстановления ссылки для редактирования. Пожалуйста, свяжитесь с Оргкомитетом Конференции"
+
+msgid "REGISTRATION FORM"
+msgstr "ФОРМА РЕГИСТРАЦИИ"
+
+msgid "Registration edit link has been sent to the specified E-mail."
+msgstr "Ссылка для редактирования формы регистрации отправлена на указанную почту."
+
+msgid "IPSI RAS"
+msgstr "ИСОИ РАН"
+
+msgid "Other_"
+msgstr "Другая"
+
+msgid "Show events details"
+msgstr "Посмотреть описание мероприятий"
+
+msgid "Planetarium"
+msgstr "Планетарий"
+
+msgid "Museum of aviation and cosmonautics"
+msgstr "Музей космонавтики Самарского&nbsp;университета"
+
+msgid "Prefix"
+msgstr "Статус"
+
+msgid "ITNT-2020 Conference Website"
+msgstr "Сайт Конференции ИТНТ-2020"
+
+msgid "Please, wait 5 minutes for the second request"
+msgstr "Пожалуйста, подождите 5 минут для повторного запроса"
+
+msgid "I agree to the processing of my personal data"
+msgstr "Я согласен на обработку персональных данных"
+
+msgid "Other Country"
+msgstr "Другая страна"
+
+msgid "Workshop participation"
+msgstr "Участие в мастер-классах"
+
+msgid "Track #"
+msgstr "Трэк №"
+
+msgid "Show workshops details"
+msgstr "Посмотреть описание мастер-классов"
+
+msgid "Select prefix"
+msgstr "Выберите статус"
+
+msgid "Enter your name"
+msgstr "Введите своё имя"
+
+msgid "Enter your family name"
+msgstr "Введите свою фамилию"
+
+msgid "Enter your e-mail"
+msgstr "Введите свой e-mail"
+
+msgid "Select scientific degree"
+msgstr "Выберите учёную степень"
+
+msgid "Select residency"
+msgstr "Выберите гражданство"
+
+msgid "Select organization"
+msgstr "Выберите организацию"
+
+msgid "Enter organization's name"
+msgstr "Введите имя организации"
+
+msgid "Enter organization's city"
+msgstr "Введите город организации"
+
+msgid "Select format of participation"
+msgstr "Выберите формат участия"
+
+msgid "Sorry, we cannot process your data"
+msgstr "К сожалению мы не можем обработать Ваши данные"
+
+msgid "Enter your e-mail address"
+msgstr "Введите ваш e-mail адрес"
+
+msgid "Select at least one paper to present"
+msgstr "Выберите минимум одну работу для выступления"
+
+msgid "No papers found"
+msgstr "Статей не найдено"
+
+msgid "Remove paper"
+msgstr "Удалить статью"
+
+msgid "Thank you for registering to ITNT-2020 Conference!"
+msgstr "Благодарим Вас за регистрацию на ИТНТ-2020!"
+
+msgid "If you need to edit the registration data, please, use the following link:"
+msgstr "Для изменения регистрационных данных воспользуйтесь ссылкой:"
+
+msgid "Edit registration"
+msgstr "Редактировать форму"
+
+msgid "The registration confirmation letter will be sent to the specified E-mail within 24 hours."
+msgstr "Письмо с подтверждением регистрации будет выслано Вам на указанный E-mail в течение 24 часов."
+
+msgid "COMPLETED"
+msgstr "ЗАВЕРШЕНО"
+
+msgid "FORGOT THE LINK?"
+msgstr "ЗАБЫЛИ ССЫЛКУ?"
+
+msgid "Registration server is unavailable. Please, try again later..."
+msgstr "Сервер регистрации недоступен. Пожалуйста, повторите регистрацию чуть позже..."
+
+msgid "Your registration data have been changed."
+msgstr "Данные Вашей регистрации были изменены."
+
+msgid "Recovery failed. Please, contact the Editorial Board"
+msgstr "Ошибка восстановления. Свяжитесь, пожалуйста, с Оргкомитетом Конференции"
+
+msgid "Format of presentation"
+msgstr "Формат презентации"
+
+msgid "Poster"
+msgstr "Постер"
+
+msgid "Video"
+msgstr "Видеозапись"
+
+msgid "Online"
+msgstr "Онлайн"
+
+msgid "Select format of presentation"
+msgstr "Выберите формат презентации"
+
+msgid "The participant provides a poster in JPG/JPEG format"
+msgstr "Участник предоставляет постер в формате JPG/JPEG"
+
+msgid "The participant provides a presentation video"
+msgstr "Участник предоставляет видеозапись презентации"
+
+msgid "The participant provides a presentation video and joins the broadcast at the scheduled time to answer questions online"
+msgstr "Участник предоставляет видеозапись презентации и подключается к трансляции в установленное время для ответа на вопросы онлайн"

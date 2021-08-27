@@ -1,0 +1,348 @@
+<!--Name: Квитанция для оплаты участия-->
+<html>
+
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<style>
+		<!--
+		/*Fonts*/
+		@font-face {
+			font-family: tnr;
+			src: url(../tnr.ttf);
+		}
+
+		* {
+			font-family: tnr;
+			line-height: 115%;
+		}
+
+		/*Page margins*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		@page {
+			margin: 0cm;
+		}
+
+		body {
+			width: 210mm;
+			height: 297mm;
+			position: relative;
+		}
+
+		#margins,
+		.margins {
+			padding-left: 20mm;
+			padding-right: 20mm;
+			padding-top: 20mm;
+			padding-bottom: 20mm;
+		}
+
+		table {
+			border-spacing: 0
+		}
+
+		table td {
+			padding: 2px;
+		}
+
+		/*Table*/
+		.bordered {
+			border-collapse: collapse;
+		}
+
+		.bordered td,
+		.bordered th {
+			border: 1px solid black;
+		}
+
+		/*Text align*/
+		.justify {
+			text-align: justify;
+		}
+
+		.left {
+			text-align: left;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		/*Text parameters*/
+		.fs-10 {
+			font-size: 10pt;
+		}
+
+		.fs-13 {
+			font-size: 13pt;
+		}
+
+		.fs-14 {
+			font-size: 14pt;
+		}
+
+		.lh-100 {
+			line-height: 100%;
+		}
+
+		.lh-115 {
+			line-height: 115%;
+		}
+
+		.lh-150 {
+			line-height: 150%;
+		}
+
+		.ind-10 {
+			text-indent: 10mm;
+		}
+
+		/*Margins*/
+		.mt-2 {
+			margin-top: 2mm;
+		}
+
+		.mt-4 {
+			margin-top: 4mm;
+		}
+
+		.mt-6 {
+			margin-top: 6mm;
+		}
+
+		.mt-8 {
+			margin-top: 8mm;
+		}
+
+		.mt-10 {
+			margin-top: 10mm;
+		}
+
+		.mt-12 {
+			margin-top: 12mm;
+		}
+
+		.mt-14 {
+			margin-top: 14mm;
+		}
+
+		.mt-16 {
+			margin-top: 16mm;
+		}
+
+		.mt-18 {
+			margin-top: 18mm;
+		}
+
+		.mt-20 {
+			margin-top: 20mm;
+		}
+
+		.mt-22 {
+			margin-top: 22mm;
+		}
+
+		.mt-24 {
+			margin-top: 24mm;
+		}
+
+		.mt-26 {
+			margin-top: 26mm;
+		}
+
+		.mt-28 {
+			margin-top: 28mm;
+		}
+
+		.mt-30 {
+			margin-top: 30mm;
+		}
+
+		.mt-32 {
+			margin-top: 32mm;
+		}
+
+		.mt-34 {
+			margin-top: 34mm;
+		}
+
+		.mt-36 {
+			margin-top: 36mm;
+		}
+
+		.mt-38 {
+			margin-top: 38mm;
+		}
+
+		.mt-40 {
+			margin-top: 40mm;
+		}
+
+		.mt-50 {
+			margin-top: 50mm;
+		}
+
+		/*Test Layout*/
+		.TestBody {
+			border: 1px solid red;
+			display: flex;
+		}
+
+		.TestBody>#margins {
+			display: flex;
+		}
+
+		.TestBody>#margins>div {
+			border: 1px solid blue;
+			width: 100%;
+		}
+		-->
+	</style>
+</head>
+
+<body class='TestBody'>
+	<div id='margins'>
+		<div>
+			<!-- Main canvas -->
+			<table class='bordered' style='width:100%'>
+				<tr style='vertical-align:top'>
+					<td class='right' style='width:150px'>
+						<p class='mt-10'>Извещение</p>
+						<p class='mt-50 fs-10'>Кассир</p>
+					</td>
+					<td class='padding:4px'>
+						<table style='width:100%' class='bordered'>
+							<tr>
+								<td colspan='3'>
+									<p class='center lh-150'>Получатель платежа:</p>
+									<p class='center lh-150'>ИП Зайцев Владислав Дмитриевич</p>
+									<p class='center lh-150'>ИНН 631940024953</p>
+									<p class='center lh-150'>Р/с 40802810929390001620</p>
+									<p class='center lh-150'>В ФИЛИАЛ "НИЖЕГОРОДСКИЙ"</p>
+									<p class='center lh-150'>АО "АЛЬФА-БАНК"</p>
+									<p class='center lh-150'>БИК 042202824</p>
+									<p class='center lh-150'>К/с: 30101810200000000824 в ВОЛГО-ВЯТСКОЕ ГУ БАНКА РОССИИ</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='3'>
+									<p class='center mt-4'>___________________________________________________</p>
+									<p class='center lh-150'>плательщик (ФИО, адрес)</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='2'>
+									<p class='center lh-150'>Вид платежа</p>
+								</td>
+								<td>
+									<p class='center lh-150'>Сумма</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='2'>
+									<p class='center lh-150'>ID: %ID% - За участие в конференции ИТНТ-2020,
+										<b>(наименование платежа указывать обязательно!)</b></p>
+								</td>
+								<td>
+									<p class='center lh-150'>%SUM%</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan='2' width='60%'>
+									<p>Плательщик:</p>
+								</td>
+								<td width='20%'>
+									<p>&nbsp;</p>
+								</td>
+								<td>
+									<p>&nbsp;</p>
+								</td>
+							</tr>
+							<tr>
+								<td width='20%'>
+									<p>Всего:</p>
+								</td>
+								<td>
+									<p class='center lh-150'>%SUM%</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr style='vertical-align:top'>
+					<td class='right' style='width:150px'>
+						<p class='mt-10'>Квитанция</p>
+						<p class='mt-50 fs-10'>Кассир</p>
+					</td>
+					<td class='padding:4px'>
+						<table style='width:100%' class='bordered'>
+							<tr>
+								<td colspan='3'>
+									<p class='center lh-150'>Получатель платежа:</p>
+									<p class='center lh-150'>ИП Зайцев Владислав Дмитриевич</p>
+									<p class='center lh-150'>ИНН 631940024953</p>
+									<p class='center lh-150'>Р/с 40802810929390001620</p>
+									<p class='center lh-150'>В ФИЛИАЛ "НИЖЕГОРОДСКИЙ"</p>
+									<p class='center lh-150'>АО "АЛЬФА-БАНК"</p>
+									<p class='center lh-150'>БИК 042202824</p>
+									<p class='center lh-150'>К/с: 30101810200000000824 в ВОЛГО-ВЯТСКОЕ ГУ БАНКА РОССИИ</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='3'>
+									<p class='center mt-4'>___________________________________________________</p>
+									<p class='center lh-150'>плательщик (ФИО, адрес)</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='2'>
+									<p class='center lh-150'>Вид платежа</p>
+								</td>
+								<td>
+									<p class='center lh-150'>Сумма</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan='2'>
+									<p class='center lh-150'>ID: %ID% - За участие в конференции ИТНТ-2020,
+										<b>(наименование платежа указывать обязательно!)</b></p>
+								</td>
+								<td>
+									<p class='center lh-150'>%SUM%</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan='2' width='60%'>
+									<p>Плательщик:</p>
+								</td>
+								<td width='20%'>
+									<p>&nbsp;</p>
+								</td>
+								<td>
+									<p>&nbsp;</p>
+								</td>
+							</tr>
+							<tr>
+								<td width='20%'>
+									<p>Всего:</p>
+								</td>
+								<td>
+									<p class='center lh-150'>%SUM%</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>

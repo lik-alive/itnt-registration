@@ -1,0 +1,265 @@
+<!--Name: Подтверждение презентеру-->
+<html>
+
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<style>
+		<!--
+		/*Fonts*/
+		@font-face {
+			font-family: tnr;
+			src: url(../tnr.ttf);
+		}
+
+		* {
+			font-family: tnr;
+			line-height: 115%;
+		}
+
+		/*Page margins*/
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		@page {
+			margin: 0cm;
+		}
+
+		body {
+			width: 210mm;
+			height: 297mm;
+			position: relative;
+		}
+
+		#margins,
+		.margins {
+			padding-left: 20mm;
+			padding-right: 20mm;
+			padding-top: 20mm;
+			padding-bottom: 20mm;
+		}
+
+		table {
+			border-spacing: 0
+		}
+
+		table td {
+			padding: 2px;
+		}
+
+		/*Table*/
+		.bordered {
+			border-collapse: collapse;
+		}
+
+		.bordered td,
+		.bordered th {
+			border: 1px solid black;
+		}
+
+		/*Text align*/
+		.justify {
+			text-align: justify;
+		}
+
+		.left {
+			text-align: left;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+		}
+
+		/*Text parameters*/
+		.fs-10 {
+			font-size: 10pt;
+		}
+
+		.fs-13 {
+			font-size: 13pt;
+		}
+
+		.fs-14 {
+			font-size: 14pt;
+		}
+
+		.lh-100 {
+			line-height: 100%;
+		}
+
+		.lh-115 {
+			line-height: 115%;
+		}
+
+		.lh-150 {
+			line-height: 150%;
+		}
+
+		.ind-10 {
+			text-indent: 10mm;
+		}
+
+		/*Margins*/
+		.mt-2 {
+			margin-top: 2mm;
+		}
+
+		.mt-4 {
+			margin-top: 4mm;
+		}
+
+		.mt-6 {
+			margin-top: 6mm;
+		}
+
+		.mt-8 {
+			margin-top: 8mm;
+		}
+
+		.mt-10 {
+			margin-top: 10mm;
+		}
+
+		.mt-12 {
+			margin-top: 12mm;
+		}
+
+		.mt-14 {
+			margin-top: 14mm;
+		}
+
+		.mt-16 {
+			margin-top: 16mm;
+		}
+
+		.mt-18 {
+			margin-top: 18mm;
+		}
+
+		.mt-20 {
+			margin-top: 20mm;
+		}
+
+		.mt-22 {
+			margin-top: 22mm;
+		}
+
+		.mt-24 {
+			margin-top: 24mm;
+		}
+
+		.mt-26 {
+			margin-top: 26mm;
+		}
+
+		.mt-28 {
+			margin-top: 28mm;
+		}
+
+		.mt-30 {
+			margin-top: 30mm;
+		}
+
+		.mt-32 {
+			margin-top: 32mm;
+		}
+
+		.mt-34 {
+			margin-top: 34mm;
+		}
+
+		.mt-36 {
+			margin-top: 36mm;
+		}
+
+		.mt-38 {
+			margin-top: 38mm;
+		}
+
+		.mt-40 {
+			margin-top: 40mm;
+		}
+
+		.mt-50 {
+			margin-top: 50mm;
+		}
+
+		/*Test Layout*/
+		.TestBody {
+			border: 1px solid red;
+			display: flex;
+		}
+
+		.TestBody>#margins {
+			display: flex;
+		}
+
+		.TestBody>#margins>div {
+			border: 1px solid blue;
+			width: 100%;
+		}
+		-->
+	</style>
+
+</head>
+
+<body class='TestBody'>
+
+	<div id='margins'>
+		<div>
+			<!-- Main canvas -->
+			<p class='fs-14 center mt-20'>&nbsp;</p>
+
+			<p class='fs-14 center mt-40'>Dear %TONAME%!</p>
+
+			<p class='fs-14 ind-10 justify mt-8 lh-150'>It is our pleasure to inform you that the Program Committee of ITNT-2020 has accepted the following article(s) to be presented at the Conference and included in the Conference proceedings (indexed in RSCI):</p>
+
+			<p class='fs-14 ind-10 justify mt-8 lh-150'>%PAPER1%</p>
+
+			<p class='fs-14 ind-10 justify mt-2 lh-150'>%PAPER2%</p>
+
+			<p class='fs-14 ind-10 justify mt-8 lh-150'>We are writing to cordially invite you to participate in the
+				coming VI&nbsp;International Conference on Information Technology and Nanotechnology (ITNT&#8211;2020)
+				to be held on May 26-29, 2020 in Samara.</p>
+		</div>
+	</div>
+
+
+	<!-- Objects at absolute position -->
+	<div style='position:absolute; width:100%; top:205mm; right:0;'>
+		<div class='margins'>
+			<table width='100%'>
+				<tr>
+					<td width='80%'>
+						<p class='fs-14 lh-150'>On behalf of the Program Committee,</p>
+
+						<p class='fs-14 lh-150'>Sincerely</p>
+
+						<p class='fs-14 lh-150'>Prof. Nikolay Kazanskiy,</p>
+
+						<p class='fs-14 lh-150'>ITNT-2020 Program Committee Vice-Chair</p>
+
+						<p class='fs-14 lh-150'>_____________________________________________________________________
+						</p>
+
+						<p class='fs-13 lh-150 right'>Email: secretary@itnt-conf.org</p>
+
+						<p class='fs-13 lh-150 right'>Web site: itnt-conf.org</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<img style='position:absolute; top:20mm; left:20mm; width:170mm;' src='..\header_2020.png' src='%HEADERPIC%' />
+
+	<img style='position:absolute; top:236mm; right:36mm; width:50mm;' src='..\signk.png' src='%SIGNPIC%' />
+
+</body>
+
+</html>
