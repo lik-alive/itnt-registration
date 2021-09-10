@@ -2,12 +2,15 @@
 $FILESFOLDER = ABSPATH . 'files/';
 $FILESURL = 'files/';
 $TEMPDIR = 'temp/';
+$LOGSDIR = $TEMPDIR . '/logs';
 
 // Init file structure
 function files_init()
 {
 	global $TEMPDIR;
 	files_make_directory_TH($TEMPDIR);
+	global $LOGSDIR;
+	files_make_directory_TH($LOGSDIR);
 }
 files_init();
 
@@ -324,4 +327,28 @@ function files_fill_pdf_TH($pdfhtml, $replaces, $name)
 	if ($res === false) throw new DataException("Ошибка создания PDF-файла", array('function' => __FUNCTION__, 'value' => $replaces));
 
 	return getFile($filename);
+}
+
+/***** LOGS *****/
+
+function files_write_log($prefix, $message, $value = null)
+{
+	// Object output
+	$log = [
+		'DateTime' => date('Y-m-d H:i:s'),
+		'ID_User' => is_user_logged_in() ? wp_get_current_user()->ID : null,
+		'Prefix' => $prefix,
+		'Message' => $message,
+		'Value' => $value
+	];
+
+	// Write to file
+	global $LOGSDIR;
+	$apath = files_get_absolute_path($LOGSDIR . '/log_' . date('Y-m-d') . '.txt');
+	file_put_contents(
+		$apath,
+		"\n" . json_encode($log, JSON_UNESCAPED_UNICODE) . "\n",
+		FILE_APPEND
+	);
+	chmod($apath, fileperms($apath) | 16);
 }

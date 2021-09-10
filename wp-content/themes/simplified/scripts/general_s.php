@@ -125,43 +125,43 @@ function _ge($text, $domain = 'translate')
 //-----Logging
 
 //Log event
-function g_lev($event, $function, $value = null)
+function g_lev($message, $function, $value = null)
 {
-	$location = array('function' => $function);
-
-	db_add_log(1, $event, $location, $value);
+	$message = "$message <$function>";
+	files_write_log('INFO', $message, $value);
 }
 
 //Log DB event
-function g_ldv($event, $function, $table, $id, $value)
+function g_ldv($message, $function, $table, $id, $value)
 {
-	$location = array(
+	$data = array(
 		'function' => $function,
 		'table' => $table,
-		'id' => $id
+		'id' => $id,
+		'value' => $$value
 	);
 
-	db_add_log(1, $event, $location, $value);
+	g_lev($message, $function, $data);
 }
 
 //Log error
-function g_ler($event, $function, $value = null)
+function g_ler($message, $function, $value = null)
 {
-	$location = array('function' => $function);
-
-	db_add_log(2, $event, $location, $value);
+	$message = "$message <$function>";
+	files_write_log('ERROR', $message, $value);
 }
 
 //Log DB error
-function g_ldr($event, $function, $table, $id, $value)
+function g_ldr($message, $function, $table, $id, $value)
 {
-	$location = array(
+	$data = [
 		'function' => $function,
 		'table' => $table,
-		'id' => $id
-	);
+		'id' => $id,
+		'value' => $value
+	];
 
-	db_add_log(2, $event, $location, $value);
+	g_ler($message, $function, $data);
 }
 
 //Log error from Exception variable

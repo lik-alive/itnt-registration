@@ -128,20 +128,3 @@ function db_set_field_TH($tablename, $fieldname, $value, $id)
 
 	return $result;
 }
-
-//-----Personal Table Functions
-
-//Save event to logs
-function db_add_log($status, $event, $location, $value)
-{
-	$msg = array(
-		'ID_User' => is_user_logged_in() ? wp_get_current_user()->ID : null,
-		'Event' => $event,
-		'Status' => $status,
-		'Location' => json_encode($location),
-		'Value' => json_encode($value, JSON_UNESCAPED_UNICODE)
-	);
-
-	global $wpdb;
-	$wpdb->insert('zi_ab_logs', $msg);
-}
