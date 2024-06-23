@@ -102,22 +102,6 @@ CREATE TABLE `zi_ab_evlinks` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `zi_ab_logs`
---
-
-CREATE TABLE `zi_ab_logs` (
-  `ID` bigint UNSIGNED NOT NULL,
-  `ID_User` bigint UNSIGNED DEFAULT NULL,
-  `DateTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `Event` varchar(1024) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Status` tinyint UNSIGNED NOT NULL DEFAULT '1',
-  `Location` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `Value` varchar(4096) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Структура таблицы `zi_ab_outmails`
 --
 
@@ -788,13 +772,6 @@ ALTER TABLE `zi_ab_evlinks`
   ADD KEY `ELRel_2` (`ID_Participant`);
 
 --
--- Индексы таблицы `zi_ab_logs`
---
-ALTER TABLE `zi_ab_logs`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `LRel_1` (`ID_User`);
-
---
 -- Индексы таблицы `zi_ab_outmails`
 --
 ALTER TABLE `zi_ab_outmails`
@@ -1051,12 +1028,6 @@ ALTER TABLE `zi_ab_evlinks`
   MODIFY `ID` int UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `zi_ab_logs`
---
-ALTER TABLE `zi_ab_logs`
-  MODIFY `ID` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT для таблицы `zi_ab_outmails`
 --
 ALTER TABLE `zi_ab_outmails`
@@ -1235,12 +1206,6 @@ ALTER TABLE `zi_ab_authors`
 ALTER TABLE `zi_ab_evlinks`
   ADD CONSTRAINT `ELRel_1` FOREIGN KEY (`ID_Event`) REFERENCES `zi_ab_events` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `ELRel_2` FOREIGN KEY (`ID_Participant`) REFERENCES `zi_ab_participants` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Ограничения внешнего ключа таблицы `zi_ab_logs`
---
-ALTER TABLE `zi_ab_logs`
-  ADD CONSTRAINT `LRel_1` FOREIGN KEY (`ID_User`) REFERENCES `zi_users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ограничения внешнего ключа таблицы `zi_ab_outmails`
