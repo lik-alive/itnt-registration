@@ -29,12 +29,14 @@ function pdf_addFont($font_name, $font_path)
 //Create PDF representation of HTML
 function pdf_create($html)
 {
+	global $FILESFOLDER;
+
 	//Process html
 	$html = preg_replace('/class=["\']TestBody["\']/s', "", $html);
 	$html = preg_replace('/<script>(.*?)<\/script>/s', '', $html);
 	$html = preg_replace('/src=[\'\"]\.\..*?[\'\"]/', '', $html);
-	$html = str_replace('%HEADERPIC%', get_template_directory() . '/emails/header_2020.png', $html);
-	$html = str_replace('%SIGNPIC%', get_template_directory() . '/emails/signk.png', $html);
+	$html = str_replace('%HEADERPIC%', $FILESFOLDER . 'ini/header_2020.png', $html);
+	$html = str_replace('%SIGNPIC%', $FILESFOLDER . 'ini/signk.png', $html);
 
 	//Convert before making replaces in text
 	//$html = mb_convert_encoding($html, 'UTF-8', 'Windows-1251');

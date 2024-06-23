@@ -603,6 +603,8 @@ function letters_sendPartConfirmationNoReg_TH($ID_Article, $toEmail, $postponeSe
  */
 function createPartConfirmationPDF_TH($ID_Article)
 {
+	global $FILESFOLDER;
+
 	$article = db_get('zi_ab_articles', $ID_Article);
 	$pdfhtml = get_template_directory() . '/emails/confirmations/partconfirm_pdf.html';
 
@@ -610,7 +612,7 @@ function createPartConfirmationPDF_TH($ID_Article)
 	$replaces['%ID%'] = $article->ECID;
 	$replaces['%AUTHORS%'] = $article->Authors;
 	$replaces['%PAPER%'] = $article->Title;
-	$replaces['%SIGNPIC%'] = get_template_directory() . '/emails/signk.png';
+	$replaces['%SIGNPIC%'] = $FILESFOLDER . 'ini/signk.png';
 
 	if ($article->Decision === 'ACCEPT ORAL')
 		$replaces['%FORMAT%'] = 'устный доклад';
@@ -1145,13 +1147,15 @@ function letters_sendExtPubConfirmation_TH($ecid, $authors, $title, $email, $pos
  */
 function createExtPubConfirmationPDF_TH($ecid, $authors, $title)
 {
+	global $FILESFOLDER;
+
 	$pdfhtml = get_template_directory() . '/emails/confirmations/pubconfirm_pdf.html';
 
 	$replaces = array();
 	$replaces['%ID%'] = $ecid;
 	$replaces['%AUTHORS%'] = $authors;
 	$replaces['%PAPER%'] = $title;
-	$replaces['%SIGNPIC%'] = get_template_directory() . '/emails/signk.png';
+	$replaces['%SIGNPIC%'] = $FILESFOLDER . 'ini/signk.png';
 
 	$name = 'ExtConf_' . sprintf("%03d", $ecid);
 
