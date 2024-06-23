@@ -30,10 +30,12 @@ The service was deployed on the infrastructure of Samara University, implemented
 - Bootstrap v4.3.1
 - jQuery v3.3.1
 - MySQL v8
+- Internationalization (en, ru)
 - Dockerized
 
 ### Functionality
 - Registration for conference participants
+- Bilingual interface (English and Russian)
 - Fast search by paperID
 - Admin panel
 - Statistics of participants, including geolocation
