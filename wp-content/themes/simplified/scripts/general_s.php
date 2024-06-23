@@ -138,7 +138,7 @@ function g_ldv($message, $function, $table, $id, $value)
 		'function' => $function,
 		'table' => $table,
 		'id' => $id,
-		'value' => $$value
+		'value' => $value
 	);
 
 	g_lev($message, $function, $data);
