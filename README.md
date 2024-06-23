@@ -2,7 +2,7 @@
 
 ## Info
 
-**Registration service for ITNT conference**
+**Registration service for the ITNT conference**
 
 The service helps organize registration process for a scientific conference.
 
@@ -10,7 +10,7 @@ For participants, it provides simple, smart, customizable single-page registrati
 
 For organizers, the services gives a rich toolset for monitoring the registration process, collecting statistics and conducting mass mailings. The key task was integration with the EasyChair platform, which allowed access to conference submissions.
 
-The service was deployed on the infrastructure of Samara University, implemented into the management process of ITNT conference and supported from 2019 to 2020.
+The service was deployed on the infrastructure of Samara University, implemented into the management process of the ITNT conference and supported from 2019 to 2020.
 
 ## Table of Contents
 - [Features](#features)
