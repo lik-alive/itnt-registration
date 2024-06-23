@@ -1,28 +1,24 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 $EMAIL_FOLDER = 'emails/';
-$EMAIL_FROM_NAME = 'ITNT-2020';
-$EMAIL_IMAPPATH = '{imap.yandex.ru:993/imap/ssl/novalidate-cert}registration';
-
 
 //Send E-mail letter using PHPMailer
 function sendLetter_TH($msg, $isTech)
 {
-	//TODO - Disabled
-	throw new Exception('Forbidden.');
-	exit();
-
 	$mail = new PHPMailer;
 
 	if ($isTech) {
+		if (!defined(MAIL_TECH_ADDRESS)) return;
+
 		$from = MAIL_TECH_ADDRESS;
 		$username = MAIL_TECH_ADDRESS;
 		$password = MAIL_TECH_PASSWORD;
 	} else {
+		if (!defined(MAIL_SEC_ADDRESS)) return;
+
 		$from = MAIL_SEC_ADDRESS;
 		$username = MAIL_SEC_ADDRESS;
 		$password = MAIL_SEC_PASSWORD;
@@ -40,8 +36,7 @@ function sendLetter_TH($msg, $isTech)
 	$mail->SMTPAuth = true; // Enable SMTP authentication
 
 	// Recepients
-	global $EMAIL_FROM_NAME;
-	$mail->setFrom($from, $EMAIL_FROM_NAME);
+	$mail->setFrom($from, MAIL_FROM_NAME);
 	// TO
 	foreach ($msg['TO'] as $row) {
 		$mail->addAddress($row['Email'], $row['Name']); // Add a recipient
@@ -83,10 +78,9 @@ function sendLetter_TH($msg, $isTech)
 		throw new DataException('Письмо не может быть отправлено', array('function' => __FUNCTION__, 'value' => array($msg, $mail->ErrorInfo)));
 	} else {
 		//Save letter to IMAP folder
-		global $EMAIL_IMAPPATH;
-		if (isset($EMAIL_IMAPPATH)) {
-			$imapStream = @imap_open($EMAIL_IMAPPATH, $mail->Username, $mail->Password);
-			@imap_append($imapStream, $EMAIL_IMAPPATH, $mail->getSentMIMEMessage());
+		if (defined(MAIL_IMAP_PATH)) {
+			$imapStream = @imap_open(MAIL_IMAP_PATH, $mail->Username, $mail->Password);
+			@imap_append($imapStream, MAIL_IMAP_PATH, $mail->getSentMIMEMessage());
 			@imap_close($imapStream);
 		}
 	}
