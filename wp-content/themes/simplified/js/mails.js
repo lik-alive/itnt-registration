@@ -47,7 +47,7 @@ var datatable = $("#datatable").DataTable({
           });
 
           if (meta.Extra.Link !== undefined) {
-            tostr = `<a href='/${meta.Extra.Link}'>${tostr}</a>`;
+            tostr = `<a href='${SITEURL}/${meta.Extra.Link}'>${tostr}</a>`;
           }
 
           let files = "";

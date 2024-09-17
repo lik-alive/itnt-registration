@@ -8,6 +8,10 @@ get_header();
 
 ?>
 
+<script>
+	const SITEURL = "<?php echo WP_SITEURL; ?>";
+</script>
+
 <div class='mx-4 my-3'>
 	<div class='border border-secondary'>
 		<div class='text-center bg-secondary py-2 px-3 text-white' style='font-size:  1.4rem'>Почтовик</div>
