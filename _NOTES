@@ -1,2 +1,0 @@
-// Convert po to mo (localization files)
-msgfmt ru_RU.po -o ru_RU.mo

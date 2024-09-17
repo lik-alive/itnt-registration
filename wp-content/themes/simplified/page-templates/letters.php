@@ -6,7 +6,9 @@ if (!current_user_can('administrator')) g_404();
 
 get_header();
 
-$templ = stripslashes($_GET['templ']);
+if (isset($_GET['templ'])) {
+	$templ = stripslashes($_GET['templ']);
+}
 ?>
 
 <div class='mx-4 mt-3'>

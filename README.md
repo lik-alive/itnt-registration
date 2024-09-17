@@ -20,6 +20,7 @@ The service was deployed on the infrastructure of Samara University, implemented
   - [For development](#for-development)
   - [For production](#for-production)
   - [For backup](#for-backup)
+- [Notes](#notes)
 - [License](#license)
 
 ## Features
@@ -82,7 +83,7 @@ curl https://api.wordpress.org/secret-key/1.1/salt/
 4. Change ownership
 ```sh
 sudo chown www-data:www-data .
-sudo chown www-data:www-data ./files
+sudo chown www-data:www-data ./files -R
 sudo chmod 775 .
 ```
 
@@ -115,6 +116,13 @@ insert:
 1. Install pv
 ```sh
 sudo apt update && sudo apt install pv
+```
+
+## Notes
+
+1. Convert po to mo (localization files)
+```sh
+msgfmt ru_RU.po -o ru_RU.mo
 ```
 
 ## License
