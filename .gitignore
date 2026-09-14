@@ -3,6 +3,7 @@
 *.sql
 *.sqlite
 
+# Wordpress
 wp-admin
 wp-includes
 .htaccess
@@ -11,6 +12,8 @@ readme.html
 /*.php
 !init.php
 !wp-config-mysample.php
+
+## WP Plugins
 wp-content/plugins/*
 !wp-content/plugins/aryo-activity-log
 !wp-content/plugins/baw-login-logout-menu
@@ -18,11 +21,14 @@ wp-content/plugins/*
 !wp-content/plugins/nav-menu-roles
 !wp-content/plugins/wp-force-login
 !wp-content/plugins/wp-maintenance-mode
+
+## WP Themes
 wp-content/themes/*
 !wp-content/themes/simplified
 
-!.config/*
-wp-config.php
+## WP files
 files
 _data
+
+# ignore env variables
 .env

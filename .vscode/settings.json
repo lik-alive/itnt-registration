@@ -1,0 +1,26 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.exclude": {
+        "wp-admin": true,
+        "wp-includes": true,
+        "wp-content/[^t]*": true,
+        "wp-content/themes/[^s]*": true,
+        ".htaccess": true,
+        "index.php": true,
+        "license*.txt": true,
+        "readme.html": true,
+        "wp-[^c]*.php": true,
+        "wp-com*.php": true,
+        "wp-config-[^m]*.php": true,
+        "wp-cr*.php": true,
+        "x*.php": true,
+
+        "wp-content/themes/simplified/assets": true
+    },
+    "terminal.integrated.allowChords": false,
+    "intelephense.diagnostics.exclude": {
+        "**/*.php": [
+            "P1132"
+        ]
+    }
+}
